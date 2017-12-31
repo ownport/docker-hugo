@@ -1,9 +1,11 @@
 #!/usr/bin/env sh
 set -eu
 
+HOST_IP_ADDR=`hostname -i`
+
 case ${1} in
     hugo:server)
-        exec hugo server
+        exec hugo server --bind=${HOST_IP_ADDR} --baseUrl=http://${HOST_IP_ADDR}
         ;;
     hugo:newsite)
         exec hugo new site ${2}
