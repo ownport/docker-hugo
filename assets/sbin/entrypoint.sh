@@ -10,6 +10,9 @@ case ${1} in
     hugo:server)
         exec hugo server --bind=${HOST_IP_ADDR} --baseUrl=http://${HOST_IP_ADDR}
         ;;
+    hugo:server:debug)
+        exec hugo server --bind=${HOST_IP_ADDR} --baseUrl=http://${HOST_IP_ADDR} --log
+        ;;
     hugo:newsite)
         exec hugo new site ${2}
         ;;
