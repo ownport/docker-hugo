@@ -11,7 +11,7 @@ case ${1} in
         exec hugo server --bind=${HOST_IP_ADDR} --baseUrl=http://${HOST_IP_ADDR}
         ;;
     hugo:server:debug)
-        exec hugo server --bind=${HOST_IP_ADDR} --baseUrl=http://${HOST_IP_ADDR} --log
+        exec hugo server --bind=${HOST_IP_ADDR} --baseUrl=http://${HOST_IP_ADDR} --log --debug
         ;;
     hugo:newsite)
         exec hugo new site ${2}
