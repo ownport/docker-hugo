@@ -4,7 +4,7 @@ set -eu
 
 # Settings
 
-HUGO_VERSION='0.32'
+HUGO_VERSION='0.60.1'
 
 # Installation
 
