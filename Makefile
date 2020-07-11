@@ -1,4 +1,4 @@
-HUGO_VERSION=0.60.1
+HUGO_VERSION=0.73.0
 
 build-docker-image:
 	docker build -t ownport/hugo:${HUGO_VERSION} .

@@ -8,9 +8,11 @@ case ${1} in
         exec hugo version
         ;;
     hugo:server)
+        echo "[INFO] Server IP address: ${HOST_IP_ADDR}"
         exec hugo server --bind=${HOST_IP_ADDR} --baseUrl=http://${HOST_IP_ADDR}
         ;;
     hugo:server:debug)
+        echo "[INFO] Server IP address: ${HOST_IP_ADDR}"
         exec hugo server --bind=${HOST_IP_ADDR} --baseUrl=http://${HOST_IP_ADDR} --log --debug
         ;;
     hugo:newsite)
