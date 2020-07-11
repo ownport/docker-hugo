@@ -7,7 +7,7 @@ run-hugo-server-console:
 	docker run -ti --rm --name hugo-server \
 		-v $(shell pwd)/site:/data \
 		ownport/hugo:${HUGO_VERSION} \
-		/bin/sh
+		/bin/bash
 
 run-hugo-create-new-site:
 	docker run -ti --rm --name hugo-server \

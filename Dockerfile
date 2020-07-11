@@ -1,8 +1,8 @@
-FROM alpine:3.12
+FROM ubuntu:20.04
 
 ADD assets/ /tmp/assets/
 
-RUN /tmp/assets/sbin/install.sh
+RUN /tmp/assets/sbin/install-ubuntu.sh
 
 WORKDIR /data
 

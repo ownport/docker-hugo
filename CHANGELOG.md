@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.0
+
+- new versions:
+    ubuntu: 20.04
+    hugo: 0.73.0, extended
+
 ## 0.2.0
 
 - new versions:
